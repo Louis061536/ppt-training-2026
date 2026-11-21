@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>卡 01 · 大纲三步与四个空</title>
+<style>
+  @page{size:A4;margin:0}
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{--paper:#F5F1E8;--ink:#17150F;--muted:#8B8577;--accent:#C4402A;--blue:#203A78;--line:rgba(23,21,15,.14)}
+  body{background:#DED8CA;font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+  .page{width:210mm;min-height:297mm;background:var(--paper);margin:8mm auto;padding:16mm 15mm 16mm;position:relative;box-shadow:0 10px 30px rgba(0,0,0,.12);overflow:hidden}
+  @media print{body{background:#fff}.page{margin:0;box-shadow:none}}
+  .head{display:flex;justify-content:space-between;align-items:baseline}
+  .kicker{font-size:10px;letter-spacing:.24em;color:var(--blue);font-weight:700}
+  .no{font-size:10px;letter-spacing:.2em;color:var(--muted)}
+  h1{font-size:33px;font-weight:900;margin-top:12px;letter-spacing:-.01em;line-height:1.2}
+  .lede{font-size:13.5px;color:var(--muted);margin-top:9px;line-height:1.65}
+  .sec{margin-top:24px}
+  .sech{display:flex;align-items:baseline;gap:10px;border-bottom:1px solid var(--line);padding-bottom:7px}
+  .sech .k{font-size:10px;letter-spacing:.22em;color:var(--accent);font-weight:800}
+  .sech .t{font-size:12px;color:var(--muted)}
+  .steps{margin-top:12px;display:flex;flex-direction:column}
+  .step{display:grid;grid-template-columns:42px 1fr;gap:12px;align-items:start;padding:11px 0;border-bottom:1px dashed var(--line)}
+  .step:last-child{border-bottom:0}
+  .step .n{font-size:20px;font-weight:900;color:var(--blue);letter-spacing:-.02em;line-height:1.1}
+  .step .t{font-size:16.5px;font-weight:800}
+  .step .d{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.55}
+  .four{margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:11px}
+  .cell{border:1px solid var(--line);background:rgba(255,255,255,.55);padding:12px 14px;min-height:108px}
+  .cell .cl{font-size:9px;letter-spacing:.2em;color:var(--muted);font-weight:700}
+  .cell .cf{font-size:16.5px;font-weight:900;color:var(--blue);margin-top:4px}
+  .cell .cd{font-size:10.5px;color:var(--muted);margin-top:2px;line-height:1.5}
+  .wl{margin-top:12px;border-bottom:1px dashed rgba(32,58,120,.35);height:1px}
+  .wl + .wl{margin-top:15px}
+  .ex{margin-top:10px;border:1px solid var(--line);background:rgba(255,255,255,.55)}
+  .ex div{display:grid;grid-template-columns:70px 1fr;gap:12px;padding:9px 14px;border-bottom:1px dashed var(--line);align-items:baseline}
+  .ex div:last-child{border-bottom:0}
+  .ex span{font-size:9.5px;letter-spacing:.16em;color:var(--muted);font-weight:700}
+  .ex b{font-size:12.5px;font-weight:700;line-height:1.5}
+  .quote{margin-top:24px;padding:13px 16px;border-left:3px solid var(--accent);background:rgba(196,64,42,.06);font-size:15px;font-weight:800}
+  .quote span{display:block;font-size:10px;letter-spacing:.2em;color:var(--accent);font-weight:800;margin-bottom:5px}
+  .foot{position:absolute;left:15mm;right:15mm;bottom:10mm;display:flex;justify-content:space-between;font-size:9px;color:var(--muted);letter-spacing:.1em;border-top:1px solid var(--line);padding-top:7px}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="head">
+    <div class="kicker">数学学院学生会 · 干事培训</div>
+    <div class="no">卡 01 ／ 03</div>
+  </div>
+  <h1>大纲三步与四个空</h1>
+  <p class="lede">先把大纲聊死，再让 AI 动手。一页一句主张，四个空填满。</p>
+
+  <div class="sec">
+    <div class="sech"><span class="k">三步</span><span class="t">聊大纲 → 让它做 → 让它自检</span></div>
+    <div class="steps">
+      <div class="step">
+        <div class="n">01</div>
+        <div><div class="t">聊大纲</div><div class="d">一页一句主张，短到一眼读完。页数和顺序在这一步定死。</div></div>
+      </div>
+      <div class="step">
+        <div class="n">02</div>
+        <div><div class="t">让它做</div><div class="d">把大纲连同四个空一起交给 AI。一次一页或一次一套，先做一页看样。</div></div>
+      </div>
+      <div class="step">
+        <div class="n">03</div>
+        <div><div class="t">让它自检</div><div class="d">生成后逐页看字号、溢出、图位；截图放大，边角一页一页过。</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sech"><span class="k">四个空</span><span class="t">填满再交给 AI</span></div>
+    <div class="four">
+      <div class="cell">
+        <div class="cl">空 01</div>
+        <div class="cf">给谁看</div>
+        <div class="cd">老师、评委，还是刷手机的同学</div>
+        <div class="wl"></div><div class="wl"></div>
+      </div>
+      <div class="cell">
+        <div class="cl">空 02</div>
+        <div class="cf">要几页</div>
+        <div class="cd">三页、十页，还是一页</div>
+        <div class="wl"></div><div class="wl"></div>
+      </div>
+      <div class="cell">
+        <div class="cl">空 03</div>
+        <div class="cf">每页一句什么</div>
+        <div class="cd">先定主张，再交给 AI</div>
+        <div class="wl"></div><div class="wl"></div>
+      </div>
+      <div class="cell">
+        <div class="cl">空 04</div>
+        <div class="cf">硬要求</div>
+        <div class="cd">字数上限、必须留的位置、风格</div>
+        <div class="wl"></div><div class="wl"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sech"><span class="k">填一遍</span><span class="t">例 · 招新动员</span></div>
+    <div class="ex">
+      <div><span>给谁看</span><b>大一新生，多数在手机上刷到</b></div>
+      <div><span>要几页</span><b>三页：时间地点 ／ 摊位分工 ／ 报名方式</b></div>
+      <div><span>每页一句</span><b>9 月 12–13 日，A 栋楼下</b></div>
+      <div><span>硬要求</span><b>每页 60 字以内，右下角留二维码</b></div>
+    </div>
+  </div>
+
+  <div class="quote"><span>一句话</span>大纲聊得越死，生成越省事。</div>
+
+  <div class="foot">
+    <span>PPT 的三副面孔 · 课后资料包</span>
+    <span>卡 01 ／ 03</span>
+  </div>
+</div>
+</body>
+</html>

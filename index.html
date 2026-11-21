@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PPT 的三副面孔 · 课后资料包</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{--paper:#F5F1E8;--ink:#17150F;--muted:#8B8577;--accent:#C4402A;--blue:#203A78;--line:rgba(23,21,15,.14)}
+  body{background:var(--paper);font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:980px;margin:0 auto;padding:56px 24px 64px}
+  .kicker{font-size:11px;letter-spacing:.24em;color:var(--blue);font-weight:700}
+  h1{font-size:52px;font-weight:900;letter-spacing:-.03em;line-height:1.08;margin-top:10px}
+  h1 em{font-style:normal;color:var(--accent)}
+  .sub{font-size:15px;color:var(--muted);margin-top:12px;letter-spacing:.04em}
+  .faces{display:flex;gap:8px;margin-top:18px}
+  .faces span{font-size:11px;letter-spacing:.16em;font-weight:800;padding:5px 11px;border:1px solid rgba(32,58,120,.35);color:var(--blue)}
+  .rule{height:2px;background:var(--accent);margin-top:26px;width:72px}
+  .grid{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);padding:22px 22px 20px;text-decoration:none;color:var(--ink);position:relative;transition:border-color .2s,box-shadow .2s,transform .2s}
+  .card:hover{border-color:rgba(32,58,120,.5);box-shadow:9px 9px 0 rgba(32,58,120,.06);transform:translateY(-2px)}
+  .card .no{font-size:9.5px;letter-spacing:.2em;color:var(--muted);font-weight:800}
+  .card h2{font-size:21px;font-weight:900;margin-top:7px;letter-spacing:-.01em}
+  .card p{font-size:12.5px;line-height:1.65;color:var(--muted);margin-top:7px}
+  .card .go{font-size:11px;font-weight:800;color:var(--accent);letter-spacing:.1em;margin-top:auto;padding-top:14px;display:flex;justify-content:space-between;align-items:center}
+  .card .go span:last-child{font-size:15px}
+  .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent);opacity:0;transition:opacity .2s}
+  .card:hover::before{opacity:1}
+  .note{margin-top:26px;font-size:11.5px;line-height:1.75;color:var(--muted);border-left:3px solid var(--blue);padding-left:13px}
+  .foot{margin-top:40px;padding-top:14px;border-top:1px solid var(--line);display:flex;justify-content:space-between;font-size:10px;color:var(--muted);letter-spacing:.12em}
+  @media (max-width:720px){
+    .wrap{padding:36px 18px 48px}
+    h1{font-size:36px}
+    .grid{grid-template-columns:1fr}
+    .card p{min-height:0}
+    .foot{flex-direction:column;gap:6px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">数学学院学生会 · 干事培训 · 2026.11</div>
+  <h1>PPT 的<em>三副面孔</em></h1>
+  <div class="sub">课后资料包 · 练习文件、三张卡、skill 全表、这份 deck</div>
+  <div class="faces"><span>能改</span><span>能演</span><span>能看</span></div>
+  <div class="rule"></div>
+
+  <div class="grid">
+    <a class="card" href="practice/shiyelianxi_10ye.pptx">
+      <div class="no">01 · 练习文件</div>
+      <h2>十页乱版</h2>
+      <p>60 秒挑战用。十页各是各的，拿母版和排列一次改完。</p>
+      <div class="go"><span>下载 PPTX</span><span>↓</span></div>
+    </a>
+    <a class="card" href="cards/dagang.html">
+      <div class="no">02 · A4 卡</div>
+      <h2>大纲三步与四个空</h2>
+      <p>聊大纲、让它做、让它自检；四个空填满再交给 AI。</p>
+      <div class="go"><span>打开卡片</span><span>→</span></div>
+    </a>
+    <a class="card" href="cards/renhua.html">
+      <div class="no">03 · A4 卡</div>
+      <h2>说人话对照卡</h2>
+      <p>八组对照：把 AI 顺手写的套话，换成数字、动作、名字。</p>
+      <div class="go"><span>打开卡片</span><span>→</span></div>
+    </a>
+    <a class="card" href="cards/zijian.html">
+      <div class="no">04 · A4 卡</div>
+      <h2>交稿前 60 秒</h2>
+      <p>母版、一句主张、字号、对齐、具体；五条打完勾再发。</p>
+      <div class="go"><span>打开卡片</span><span>→</span></div>
+    </a>
+    <a class="card" href="skills.html">
+      <div class="no">05 · 清单</div>
+      <h2>skill 全表</h2>
+      <p>三条主车道、八个备选、两条回头路；星数与推送日期。</p>
+      <div class="go"><span>查看全表</span><span>→</span></div>
+    </a>
+    <a class="card" href="deck/index.html">
+      <div class="no">06 · 这份 deck</div>
+      <h2>PPT 的三副面孔 · 25 页</h2>
+      <p>课后回看。方向键翻页，B 键黑屏；现场演示用同一份。</p>
+      <div class="go"><span>开始回看</span><span>→</span></div>
+    </a>
+  </div>
+
+  <p class="note">三张卡按 A4 排版，浏览器里 Ctrl+P 直接打印，一人一张。手机上打开也能看，链接可以转发到部门群。</p>
+
+  <div class="foot">
+    <span>PPT 的三副面孔 · 干事培训</span>
+    <span>西南交通大学数学学院学生会 · 2026.11</span>
+  </div>
+</div>
+</body>
+</html>

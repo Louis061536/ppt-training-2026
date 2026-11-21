@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>skill 全表 · PPT 的三副面孔</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{--paper:#F5F1E8;--ink:#17150F;--muted:#8B8577;--accent:#C4402A;--blue:#203A78;--line:rgba(23,21,15,.14)}
+  body{background:var(--paper);font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1040px;margin:0 auto;padding:56px 24px 72px}
+  .back{font-size:12px;color:var(--blue);text-decoration:none;letter-spacing:.06em}
+  .back:hover{text-decoration:underline}
+  .kicker{font-size:11px;letter-spacing:.24em;color:var(--blue);font-weight:700;margin-top:26px}
+  h1{font-size:44px;font-weight:900;letter-spacing:-.02em;margin-top:8px}
+  .lede{font-size:15px;line-height:1.7;color:var(--muted);margin-top:10px;max-width:720px}
+  .sec{margin-top:38px}
+  .sech{font-size:10px;letter-spacing:.24em;color:var(--accent);font-weight:800;border-bottom:1px solid var(--line);padding-bottom:8px}
+  .lanes{margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .lane{background:#fff;border:1px solid var(--line);border-top:4px solid var(--accent);padding:20px 20px 18px}
+  .lane:nth-child(2){border-top-color:var(--blue)}
+  .lane:nth-child(3){border-top-color:rgba(23,21,15,.4)}
+  .ll{font-size:9.5px;letter-spacing:.2em;color:var(--muted);font-weight:700}
+  .lv{font-size:19px;font-weight:900;margin-top:4px}
+  .repo{display:block;font-family:Consolas,"Courier New",monospace;font-size:15px;font-weight:700;margin-top:14px;color:var(--ink);text-decoration:none}
+  .repo:hover{color:var(--blue)}
+  .desc{font-size:12.5px;line-height:1.6;color:var(--muted);margin-top:7px;min-height:40px}
+  .meta{display:flex;justify-content:space-between;align-items:baseline;margin-top:14px;border-top:1px dashed var(--line);padding-top:10px}
+  .stars{font-size:22px;font-weight:900;color:var(--accent);letter-spacing:-.02em}
+  .upd{font-size:10px;color:var(--muted);letter-spacing:.08em}
+  .table{margin-top:16px;border-top:1px solid var(--line)}
+  .tr{display:grid;grid-template-columns:1.5fr 1fr 80px 74px;gap:14px;align-items:baseline;padding:11px 4px;border-bottom:1px solid var(--line);font-size:13px}
+  .tr.h{font-size:9.5px;letter-spacing:.18em;color:var(--muted);font-weight:800;border-bottom:1px solid rgba(23,21,15,.25)}
+  .tr a{font-family:Consolas,"Courier New",monospace;font-weight:700;color:var(--ink);text-decoration:none;font-size:13.5px}
+  .tr a:hover{color:var(--blue)}
+  .tr .d{color:var(--muted);font-size:12.5px}
+  .tr .s{color:var(--accent);font-weight:900;text-align:right}
+  .tr .u{color:var(--muted);font-size:11px;text-align:right}
+  .backs{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .bk{background:#fff;border:1px solid var(--line);border-left:3px solid var(--blue);padding:16px 18px}
+  .bk .k{font-size:9px;letter-spacing:.2em;color:var(--blue);font-weight:800}
+  .bk a{display:block;font-family:Consolas,"Courier New",monospace;font-size:14px;font-weight:700;margin-top:6px;color:var(--ink);text-decoration:none}
+  .bk .d{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.55}
+  .note{margin-top:26px;font-size:11.5px;color:var(--muted);line-height:1.7;border-left:3px solid var(--accent);padding-left:12px}
+  @media (max-width:760px){
+    .lanes,.backs{grid-template-columns:1fr}
+    h1{font-size:32px}
+    .tr{grid-template-columns:1fr 70px;grid-template-areas:"a s" "d u";row-gap:4px}
+    .tr.h{display:none}
+    .tr a{grid-area:a}.tr .d{grid-area:d}.tr .s{grid-area:s}.tr .u{grid-area:u}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">← 返回资料包</a>
+  <div class="kicker">课后资料 · SKILL 全表</div>
+  <h1>skill 全表</h1>
+  <p class="lede">两条主车道加一条图片式，各挑一个代表；下面是备选池和两条回头路。星数与最近推送日期取自 GitHub（2026-11-21）。</p>
+
+  <div class="sec">
+    <div class="sech">三条主车道</div>
+    <div class="lanes">
+      <div class="lane">
+        <div class="ll">车道 01</div>
+        <div class="lv">可编辑 PPTX</div>
+        <a class="repo" href="https://github.com/hugohe3/ppt-master" target="_blank" rel="noopener">hugohe3/ppt-master</a>
+        <div class="desc">文档丢进去，出原生 PPTX，转场动画都在。</div>
+        <div class="meta"><span class="stars">78.9k</span><span class="upd">推送 11-20</span></div>
+      </div>
+      <div class="lane">
+        <div class="ll">车道 02</div>
+        <div class="lv">网页</div>
+        <a class="repo" href="https://github.com/zarazhangrui/frontend-slides" target="_blank" rel="noopener">zarazhangrui/frontend-slides</a>
+        <div class="desc">一句话出单文件网页幻灯片，34 套模板可换。</div>
+        <div class="meta"><span class="stars">32.7k</span><span class="upd">推送 06-23</span></div>
+      </div>
+      <div class="lane">
+        <div class="ll">车道 03</div>
+        <div class="lv">图片式</div>
+        <a class="repo" href="https://github.com/ningzimu/codex-ppt-skill" target="_blank" rel="noopener">ningzimu/codex-ppt-skill</a>
+        <div class="desc">文章逐页出图，自动装成 16:9 PPTX。</div>
+        <div class="meta"><span class="stars">8.1k</span><span class="upd">推送 11-16</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sech">备选池</div>
+    <div class="table">
+      <div class="tr h"><span>仓库</span><span>一句话</span><span class="s">星数</span><span class="u">推送</span></div>
+      <div class="tr"><a href="https://github.com/anthropics/skills" target="_blank" rel="noopener">anthropics/skills · pptx</a><span class="d">官方底座，PPTX 读写、编辑、合并</span><span class="s">198.1k</span><span class="u">11-16</span></div>
+      <div class="tr"><a href="https://github.com/op7418/guizang-ppt-skill" target="_blank" rel="noopener">op7418/guizang-ppt-skill</a><span class="d">杂志与瑞士国际主义风格的 HTML 幻灯片</span><span class="s">30.2k</span><span class="u">10-30</span></div>
+      <div class="tr"><a href="https://github.com/alchaincyf/huashu-design" target="_blank" rel="noopener">alchaincyf/huashu-design</a><span class="d">一句话出网页、PPTX、动画、信息图</span><span class="s">30.0k</span><span class="u">11-21</span></div>
+      <div class="tr"><a href="https://github.com/open-slide/open-slide" target="_blank" rel="noopener">open-slide/open-slide</a><span class="d">为 agent 设计的幻灯片框架</span><span class="s">9.8k</span><span class="u">11-20</span></div>
+      <div class="tr"><a href="https://github.com/lewislulu/html-ppt-skill" target="_blank" rel="noopener">lewislulu/html-ppt-skill</a><span class="d">24 主题、31 布局、20+ 动画</span><span class="s">9.2k</span><span class="u">09-14</span></div>
+      <div class="tr"><a href="https://github.com/feitangyuan/onetake" target="_blank" rel="noopener">feitangyuan/onetake</a><span class="d">一镜到底的动效短片</span><span class="s">4.3k</span><span class="u">11-19</span></div>
+      <div class="tr"><a href="https://github.com/op7418/NanoBanana-PPT-Skills" target="_blank" rel="noopener">op7418/NanoBanana-PPT-Skills</a><span class="d">Nano Banana 出整页图，附转场与演示视频</span><span class="s">3.4k</span><span class="u">01-19</span></div>
+      <div class="tr"><a href="https://github.com/addsumtech/slides_maker" target="_blank" rel="noopener">addsumtech/slides_maker</a><span class="d">论文、代码、文档转可编辑 PPTX，带交付前审查</span><span class="s">684</span><span class="u">11-19</span></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sech">两条回头路</div>
+    <div class="backs">
+      <div class="bk">
+        <div class="k">图片 → 可编辑</div>
+        <a href="https://github.com/ningzimu/image-to-editable-ppt-skill" target="_blank" rel="noopener">ningzimu/image-to-editable-ppt-skill</a>
+        <div class="d">整页图拆回文字框和形状，接着改。3.5k · 推送 09-16</div>
+      </div>
+      <div class="bk">
+        <div class="k">网页 → 可编辑</div>
+        <a href="https://github.com/Hasasasa/html-to-editable-pptx" target="_blank" rel="noopener">Hasasasa/html-to-editable-pptx</a>
+        <div class="d">网页版式转成 PPTX，套上母版接着改。102 · 推送 07-07</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="note">用法：星数用来判断成熟度，最近推送日期用来判断还在不在维护。挑一个装好，先拿一份旧稿跑一遍，再决定换不换。</p>
+</div>
+</body>
+</html>
