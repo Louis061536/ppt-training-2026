@@ -27,6 +27,8 @@
     width:1280px;height:720px;
     transform-origin:center center;
     touch-action:manipulation;
+    -webkit-user-select:none;user-select:none;
+    -webkit-touch-callout:none;
     background:var(--paper);
     overflow:hidden;
     transition:opacity .35s ease;
@@ -2365,24 +2367,24 @@
     void s.offsetWidth;
     s.classList.add('play');
 
-    if(i === pageIdx('p0')){
+    if(i === pageIdx('p1')){
       rows.forEach(function(el){ el.classList.remove('lit'); });
       later(function(){ rows[0].classList.add('lit'); }, 3100);
       later(function(){ rows[1].classList.add('lit'); }, 3350);
       later(function(){ rows[2].classList.add('lit'); }, 3600);
     }
-    if(i === pageIdx('p1')){
+    if(i === pageIdx('p2')){
       resetP2();
     }
-    if(i === pageIdx('p2')){
+    if(i === pageIdx('p3')){
       fills.forEach(function(f){ if(f) f.el.style.width = '0'; });
       take.classList.remove('on');
       qdone = [false, false, false];
     }
-    if(i === pageIdx('p3')){ flips.forEach(function(f){ f.classList.remove('flipped'); }); }
-    if(i === pageIdx('p4')) setP5(0);
-    if(i === pageIdx('p5')) setP6(0);
-    if(i === pageIdx('p6')) setP7(0);
+    if(i === pageIdx('p4')){ flips.forEach(function(f){ f.classList.remove('flipped'); }); }
+    if(i === pageIdx('p5')) setP5(0);
+    if(i === pageIdx('p6')) setP6(0);
+    if(i === pageIdx('p7')) setP7(0);
     if(i === pageIdx('p8')){ s8.show(0); }
     if(i === pageIdx('p9')){ s9.show(0); }
     if(i === pageIdx('p10')){ s10.show(0); }
@@ -2424,19 +2426,19 @@
       document.body.classList.toggle('black');
       return;
     }
-    if(cur === pageIdx('p1')){
+    if(cur === pageIdx('p2')){
       if(k === 'd' || k === 'D'){ p2Next(); return; }
       if(k === '1'){ p2Open(); return; }
       if(k === '2'){ p2Live(); return; }
       if(k === '3'){ p2Close(); return; }
     }
-    if(cur === pageIdx('p3') && (k === '1' || k === '2' || k === '3' || k === '4')){
+    if(cur === pageIdx('p4') && (k === '1' || k === '2' || k === '3' || k === '4')){
       flips[parseInt(k,10) - 1].classList.toggle('flipped');
       return;
     }
-    if(cur === pageIdx('p4') && (k === '1' || k === '2' || k === '3')){ setP5(parseInt(k,10) - 1); return; }
-    if(cur === pageIdx('p5') && (k === '1' || k === '2' || k === '3')){ setP6(parseInt(k,10) - 1); return; }
-    if(cur === pageIdx('p6') && (k === '1' || k === '2' || k === '3')){ setP7(parseInt(k,10) - 1); return; }
+    if(cur === pageIdx('p5') && (k === '1' || k === '2' || k === '3')){ setP5(parseInt(k,10) - 1); return; }
+    if(cur === pageIdx('p6') && (k === '1' || k === '2' || k === '3')){ setP6(parseInt(k,10) - 1); return; }
+    if(cur === pageIdx('p7') && (k === '1' || k === '2' || k === '3')){ setP7(parseInt(k,10) - 1); return; }
     if(cur === pageIdx('p8') && k === '1'){ s8.next(); return; }
     if(cur === pageIdx('p9') && k === '1'){ s9.next(); return; }
     if(cur === pageIdx('p10') && k === '1'){ s10.next(); return; }
@@ -2453,11 +2455,11 @@
     if(cur === pageIdx('p22') && (k === '1' || k === '2' || k === '3')){ p22rows[parseInt(k,10) - 1].classList.toggle('on'); checkP22(); return; }
     if(cur === pageIdx('p23') && /^[1-5]$/.test(k)){ p23rows[parseInt(k,10) - 1].classList.toggle('ok'); checkP23(); return; }
     if(cur === pageIdx('p24') && (k === '1' || k === '2' || k === '3' || k === '4')){ setP24(parseInt(k,10) - 1); return; }
-    if(cur === pageIdx('p2') && (k === '1' || k === '2' || k === '3')){
+    if(cur === pageIdx('p3') && (k === '1' || k === '2' || k === '3')){
       fillQ(parseInt(k,10) - 1);
       return;
     }
-    if(cur === pageIdx('p2') && k === '4'){
+    if(cur === pageIdx('p3') && k === '4'){
       take.classList.add('on');
     }
   });
